@@ -1,0 +1,70 @@
+<%- include('partials/header') %>
+<div class="container">
+	<nav class="mt-2 mb-2" style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/" style="color:rgba(0, 0, 0, .7)">Главная</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Фотогалерея</li>
+		</ol>
+	</nav>
+<section class="portfolio" id="portfolio">
+	<div class="container">
+			<div class="row justify-content-center">
+					<div class="col-xl-8">
+							<h2 class="about-title">Фотогалерея</h2>
+							
+							<button class="button-blog button" filter="all" val="on">Все</button>
+							<button class="button-blog button" filter="zima" val="off">Зима</button>
+							<button class="button-blog button" filter="osen" val="off">Осень</button>
+							<button class="button-blog button" filter="vesna" val="off">Весна</button>
+							<button class="button-blog button" filter="leto" val="off">Лето</button>
+				 </div>
+			</div>
+			<div class="row filter">
+					<div filter="zima" class="col-xl-4 col-md-6">
+							<img src="img/Белый_медведь.jpg" alt=""/>
+					</div>
+					<div filter="vesna" class="col-xl-4 col-md-6">
+							<img src="img/Весна_3.jpg" alt=""/>
+					</div>
+					<div filter="zima" class="col-xl-4 col-md-6">
+							<img src="img/Зима_1.jpg" alt=""/>
+					</div>
+					<div filter="vesna" class="col-xl-4 col-md-6">
+							<img src="img/Весна_2.jpg" alt=""/>
+					</div>
+					<div filter="osen" class="col-xl-4 col-md-6">
+							<img src="img/Осень_1.jpg" alt=""/> 
+					</div>
+					<div filter="osen" class="col-xl-4 col-md-6">
+							<img src="img/Осень_2.jpg" alt=""/>
+					</div>
+					<div filter="osen" class="col-xl-4 col-md-6">
+						<img src="img/Осень_3.jpg" alt=""/>
+				</div>
+				<div filter="leto" class="col-xl-4 col-md-6">
+					<img src="img/Лето_2jpg.jpg" alt=""/>
+			</div>
+			<div filter="zima" class="col-xl-4 col-md-6">
+						<img src="img/Зима_2.jpg" alt=""/>
+				</div>
+				<div filter="leto" class="col-xl-4 col-md-6">
+					<img src="img/Тигренок.jpg" alt=""/>
+			</div>
+				<div filter="vesna" class="col-xl-4 col-md-6">
+					<img src="img/Лемур.jpg" alt=""/>
+			</div>
+				<div filter="leto" class="col-xl-4 col-md-6">
+					<img src="img/Олень.jpg" alt=""/>
+			</div>
+				
+				
+			</div>
+			<div class="row">
+					<div class="col-xl-12">
+							<button class="button-blog" filter="all" val="on" style="margin-top: 30px;">Все</button>
+					</div>
+			</div>
+	</div>
+</section>
+</div>
+<%- include('partials/footer') %>

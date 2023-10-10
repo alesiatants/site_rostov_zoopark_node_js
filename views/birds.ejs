@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+<section class="bread">
+<div class="container">
+	<nav class="mt-2 mb-2" style="--bs-breadcrumb-divider: '>'; " aria-label="breadcrumb">
+		<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="/" style="color:rgba(0, 0, 0, .7)">Главная</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Птицы</li>
+		</ol>
+	</nav>
+	</div>
+</section>
+	<section id="about" class="about-content">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-xl-8">
+			<p class="about-title">Наши птички!</p>
+	</div>
+			</div>
+			<%  animals.forEach(function(animal){ %>
+<% if(animal.gender=="birds"){ %>
+				<div class="row justify-content-center">
+					<div class="col-xl-8">
+				<p class="about-title" style="margin-top: 40px;"><%=animal.name%></p>
+		</div>
+				
+
+
+	
+			<div class="row justify-content-between">
+				<div class=" scale col-md-6">
+					<img class="img-fluid" src="data:img;base64,<%=animal.image.toString('base64')%>"/>
+				</div>
+				<div class="col-md-6">
+				<div class="about-text">
+					<p><%=animal.description%></p>
+				</div>
+			</div>
+			</div>
+			<% } %>
+			<% }) %>
+		</div>
+	</section>
+	
+
+
+
+
+<%- include('partials/footer') %>
